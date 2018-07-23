@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dashboard - Create User</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/summernote.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+			    	<ul class="nav navbar-nav">
+			    		<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+			    		<li><a href="post.html">Posts</a></li>
+			    		<li><a href="user.html">Users</a></li>
+			    		<li><a href="#">File Manager</a></li>
+			    	</ul>
+			    	<ul class="nav navbar-nav navbar-right">
+			    		<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Front Page"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+			    		<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Sign Out"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+			    	</ul>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>		
+
+		<div class="post">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="toolbar">
+							<a href="user.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Users</a>
+						</div>
+						<div class="edit-form">
+							<form action="#" enctype="multipart/form-data" method="POST">
+								<div class="row">
+									<div class="col-sm-12">
+										<h3>Administrator</h3>
+										<p>ID : Administrator ID</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="name">Name</label>
+								    		<input name="name" type="text" class="form-control" placeholder="Name" required value="Administrator">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="email">Email</label>
+								    		<input name="email" type="text" class="form-control" placeholder="Email" required value="admin@example.com">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="username">Username</label>
+								    		<input name="username" type="text" class="form-control" placeholder="Username" required value="admin">
+										</div>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="image">Image/Photo</label>
+									<div class="view-wrap">
+										<div class="img-preview">
+											<img class="image-show" src="">
+										</div>
+										<div class="toolbar-img">
+											<span class="img-name"></span>											
+										</div>
+										<div class="toolbar-button">
+											<label for="file-upload" class="custom-file-upload">
+    											<i class="fa fa-cloud-upload"></i> Change Image
+											</label>
+											<input id="file-upload" name="imgUpload" type="file" accept="image/*">
+											<a class="btn btn-default cancel">Cancel</a>
+											<input type="text" name="imageURL" class="form-control image-url">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="password">Password</label>
+										<button class="btn btn-default btn-change">Change Password</button>
+										<input type="text" name="changepass" class="form-control changepass">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="form-group change">
+													<input name="new-password" type="password" class="form-control new-password" placeholder="New Password">
+													<div class="error-message">
+														<p class="error-text"></p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group change">
+													<input name="confirm-password" type="password" class="form-control confirm-password" placeholder="Confirm Password">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group btn-tool clearfix">
+									<button type="submit" class="btn btn-success btn-save">Save</button>
+									<a href="user.html" class="btn btn-default">Cancel</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<hr>
+			<div class="footer-text text-center">
+				<small>Dashboard powered by Fin Mavis. Signed in as Admin.</small>
+			</div>	
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/summernote.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

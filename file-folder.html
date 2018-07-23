@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dashboard</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/summernote.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+			    	<ul class="nav navbar-nav">
+			    		<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+			    		<li><a href="post.html">Posts</a></li>
+			    		<li><a href="user.html">Users</a></li>
+			    		<li><a href="file-manager.html">File Manager</a></li>
+			    	</ul>
+			    	<ul class="nav navbar-nav navbar-right">
+			    		<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Front Page"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+			    		<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Sign Out"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+			    	</ul>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="file-manager">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="toolbar">
+							<a href="file-manager.html"><i class="fa fa-angle-left" aria-hidden="true"></i> File Manager</a>
+						</div>
+						<div class="create-form">
+							<form action="#" method="POST">
+								<div class="row">
+									<div class="col-sm-12">
+										<h3>Edit BCA Folder</h3>
+									</div>
+								    <div class="col-sm-6">
+	    								<div class="form-group">
+	    									<label for="foldername">Folder Name</label>
+	    								    <input name="foldername" type="text" class="form-control" placeholder="Folder Name" value="BCA">
+	    								</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="form-group clearfix">
+											<label for="image">Image/Thumbnail</label>
+											<div class="view-wrap">
+												<div class="img-preview">
+												</div>							
+												<div class="toolbar-button clearfix">
+													<label for="file-upload-many" class="custom-file-upload">
+	    												<i class="fa fa-cloud-upload"></i> Upload Image
+													</label>
+													<input id="file-upload-many" name="imgUpload" type="file" accept="image/*" multiple>
+													<a class="btn btn-default cancel many">Cancel</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="form-group btn-tool">
+											<button type="submit" class="btn btn-success">Save</button>
+											<a href="#" class="btn btn-default">Cancel</a>
+										</div>
+									</div>
+								</div>
+							</form>
+							<hr>
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="thumbnail">
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+											<div class="preview-file">
+												<div class="preview-tool">
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+												</div>
+												<hr>
+												<img src="img/team.png" alt="Teamviewer">
+												<div class="caption">Filename</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="col-sm-6 col-md-4 col-lg-3">
+										<div class="thumbnail">
+											<div class="btn-editor">
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Rename"><i class="fa fa-pencil"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash"></i></a>
+											</div>
+											<hr>
+											<img class="zoom" src="img/tiga.jpeg" data-zoom-image="img/tiga.jpeg">
+											<div class="caption">Filename</div>
+										</div>
+									</div> -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<hr>
+			<div class="footer-text text-center">
+				<small>Dashboard powered by Fin Mavis. Signed in as Admin.</small>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script type="text/javascript" src="js/Chart.PieceLabel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/summernote.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
